@@ -1,0 +1,6 @@
+<p *ngIf="product && product.price > 699">
+  <button (click)="notify.emit(product.price)">Notify Me</button>
+</p>
+<p *ngIf="product && product.price <= 699">
+  <button class="stDotted" (click)="notify.emit(product.description)">RIGHT CLICK {{product.price}} {{product.alert}}</button>
+</p>
